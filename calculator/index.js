@@ -1,15 +1,17 @@
-console.log('Welcome to the calculator!');
 const readline = require('readline-sync');
+console.log('Welcome to the calculator!');
 
 console.log('Please enter desired operator');
 const operator = readline.prompt();
 
-console.log('Please enter first operand');
-const op1 = readline.prompt();
+console.log('Please enter operands separated by a space');
+var space_separated_operands = readline.prompt();
 
-console.log('Please enter second operand');
-const op2 = readline.prompt();
+space_separated_operands = space_separated_operands.replace(/\s/g, operator);
 
+console.log(eval(space_separated_operands));
+
+/*
 var answer;
 switch (operator) {
     case '+':
@@ -28,3 +30,4 @@ switch (operator) {
 }
 
 console.log(answer);
+*/
