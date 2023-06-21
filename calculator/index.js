@@ -67,6 +67,7 @@ class VowelCount {
 
 }
 
+
 PrintMessage('Welcome to the calculator!');
 
 while (true){
